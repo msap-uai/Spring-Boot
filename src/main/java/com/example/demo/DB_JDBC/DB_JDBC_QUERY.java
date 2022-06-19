@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
+
 public class DB_JDBC_QUERY {
 
     private static final Logger log = LoggerFactory.getLogger(DB_JDBC_QUERY.class);
