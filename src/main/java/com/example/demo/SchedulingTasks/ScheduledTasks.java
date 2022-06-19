@@ -15,7 +15,7 @@ public class ScheduledTasks {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(fixedRate = 30000) // 5000 = 5 segundos
+    @Scheduled(fixedRate = 60000) // 5000 = 5 segundos
     //intervalo entre invocaciones de métodos. Hay otras opciones , como fixedDelay
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(new Date()));
