@@ -22,8 +22,5 @@ public class SaludosController {
     //@PostMapping
     //@DeleteMapping
 
-    @GetMapping("/*")
-    public String Error(){
-        return "pagina no encontrada";
-    }
+
 }
