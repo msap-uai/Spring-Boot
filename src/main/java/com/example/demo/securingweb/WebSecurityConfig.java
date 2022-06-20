@@ -9,9 +9,10 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
-
+/*
 @Configuration
 @EnableWebSecurity //habilitar el soporte de seguridad web de Spring Security
+
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -28,7 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logout()
                     .permitAll();
     }
-
+    //PONGO EN AUTORIZADOS A TODOS ASI NO IMPIDE LOS OTROS SERVICIOS
     @Bean
     @Override
     public UserDetailsService userDetailsService() {
@@ -41,4 +42,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         return new InMemoryUserDetailsManager(user);
     }
+    // SE DEAHBILITO EN MAIN PARA NO TENER QUE VALIDAR EL USUARIO
 }
+*/
