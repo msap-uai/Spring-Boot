@@ -1,0 +1,13 @@
+Si usa Gradle, puede ejecutar la aplicación usando
+./gradlew bootRun.
+Alternativamente, puede crear el archivo JAR usando
+./gradlew buildy
+luego ejecutar el archivo JAR, de la siguiente manera:
+java -jar build/libs/gs-scheduling-tasks-0.1.0.jar
+
+Si usa Maven, puede ejecutar la aplicación usando
+./mvnw spring-boot:run.
+Alternativamente, puede compilar el archivo JAR
+./mvnw clean package
+y luego ejecutar el archivo JAR, de la siguiente manera:
+java -jar target/gs-scheduling-tasks-0.1.0.jar

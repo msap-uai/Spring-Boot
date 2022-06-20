@@ -1,4 +1,4 @@
-package com.example.demo.MySQL;
+package com.example.demo.DB_MySQL;
 
 import org.springframework.data.repository.CrudRepository;
 

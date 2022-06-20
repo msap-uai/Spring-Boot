@@ -27,8 +27,8 @@ public class CustomerController {
     }
     @PostMapping ("/add")
     public String addCustomer(@RequestParam String name,
-                              @RequestParam String lname){
-        Customer newCustomer = new Customer(name,lname);
+                              @RequestParam String role){
+        Customer newCustomer = new Customer(name,role);
         customerService.addCustomer(newCustomer);
         return "Customer added";
 
@@ -38,6 +38,7 @@ public class CustomerController {
     public Customer lookCostomer (@RequestParam Long id){
         return customerService.findCustomers(id);
     }
+
     @GetMapping ("/findName")
     public List<Customer> findCostomerName (@RequestParam String name){
         return customerService.findCustomersLastName(name);
@@ -48,6 +49,5 @@ public class CustomerController {
         return customerService.deleteCustomers(id);
     }
 
-    // /foos/{id}       @PathVariable int id        foos/1
-    // /foos            @RequestParam String id     foos?id=abc
+
 }
