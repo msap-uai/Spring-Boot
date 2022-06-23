@@ -1,0 +1,13 @@
+
+¿Qué hace que algo sea RESTful?
+
+Hasta ahora, tiene un servicio basado en la web que maneja las operaciones principales relacionadas con los datos de los empleados. Pero eso no es suficiente para hacer las cosas "DESCANSABLES".
+
+Bonitas URL como /employees/3no son REST.
+
+Simplemente usar GET, POST, etc. no es REST.
+
+Tener todas las operaciones CRUD establecidas no es REST.
+
+El efecto secundario de NO incluir hipermedia en nuestras representaciones es que los clientes DEBEN codificar URI para navegar por la API.
+Esto conduce a la misma naturaleza frágil que precedió al auge del comercio electrónico en la web.

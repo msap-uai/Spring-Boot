@@ -1,0 +1,20 @@
+
+¿Qué hace que algo sea RESTful?
+
+Hasta ahora, tiene un servicio basado en la web que maneja las operaciones principales relacionadas con los datos de los empleados. Pero eso no es suficiente para hacer las cosas "DESCANSABLES".
+
+Bonitas URL como /employees/3no son REST.
+
+Simplemente usar GET, POST, etc. no es REST.
+
+Tener todas las operaciones CRUD establecidas no es REST.
+
+
+PAra que sea Restfull el motor de la aplicación (y, por lo tanto, la API) deben estár controlado por hipertexto
+Presentamos Spring HATEOAS , un proyecto de Spring destinado a ayudarlo a escribir resultados basados ​​en hipermedia.
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-hateoas</artifactId>
+</dependency>
+
